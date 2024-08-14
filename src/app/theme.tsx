@@ -7,4 +7,8 @@ export const theme = {
     primary: `'Roboto', sans-serif`,
     secondary: `'Arial', sans-serif`,
   },
+  backgroundColor: {
+    primary: "#F5F5F5",
+    secondary: "#333333",
+  },
 };

@@ -23,6 +23,7 @@ export const Footer: React.FC = () => {
         <ItemsWrapper>
           <LinkWrapper href={"/"}>Home</LinkWrapper>
           <LinkWrapper href={"/about"}>About</LinkWrapper>
+          <LinkWrapper href={"/resume"}>Resume</LinkWrapper>
           <LinkWrapper href={"/contact"}>Contact</LinkWrapper>
         </ItemsWrapper>
         <IconsWrapper>

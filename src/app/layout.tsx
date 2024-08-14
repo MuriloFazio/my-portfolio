@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { LayoutThemeProvider } from "./theme-provider-layout";
+import { SharedLayout } from "./components/Layout";
 
 export const metadata: Metadata = {
   title: "Murilo's Home",
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <LayoutThemeProvider>{children}</LayoutThemeProvider>
+        <SharedLayout>{children}</SharedLayout>
       </body>
     </html>
   );

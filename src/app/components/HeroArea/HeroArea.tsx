@@ -9,11 +9,11 @@ import {
   StyledName,
   StyledProfission,
   StyledButton,
+  StyledImage,
 } from "./styles";
 
-import Image from "next/image";
-
 import profilePicture from "../../assets/profilePicture.jpg";
+import Link from "next/link";
 
 export const HeroArea: React.FC = () => {
   return (
@@ -23,15 +23,12 @@ export const HeroArea: React.FC = () => {
         <StyledName>I'm Murilo Fazio</StyledName>
         <StyledProfission>Front End Developer</StyledProfission>
         <StyledCountry>From Brazil</StyledCountry>
-        <StyledButton>Hire me</StyledButton>
+        <Link href="/contact">
+          <StyledButton type="button">Hire me</StyledButton>
+        </Link>
       </GreetingWrapper>
       <ImageWrapper>
-        <Image
-          alt="my profile picture"
-          src={profilePicture}
-          width={300}
-          height={300}
-        />
+        <StyledImage alt="my profile picture" src={profilePicture} />
       </ImageWrapper>
     </HeroAreaContainer>
   );

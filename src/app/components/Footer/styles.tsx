@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  background-color: #9fb1c4;
+  background-color: white;
 `;
 
 export const FooterWrapper = styled.div`
@@ -24,7 +24,7 @@ export const ItemsWrapper = styled.div`
   gap: 12px;
   flex-direction: column;
   padding: 8px 0;
-  @media (min-width: 460px) {
+  @media (min-width: 560px) {
     flex-direction: row;
     gap: 24px;
   }

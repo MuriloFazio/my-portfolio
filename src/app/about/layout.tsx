@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SharedLayout } from "../components/Layout";
 
 export const metadata: Metadata = {
   title: "About",
