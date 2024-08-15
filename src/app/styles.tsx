@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import backgroundImage from "./assets/backgroundImage3.png";
 
 export const StyledContainer = styled.div`
   display: flex;
@@ -7,9 +8,11 @@ export const StyledContainer = styled.div`
   height: 100%;
 `;
 
-export const HomepageContainer = styled.div`
+export const PageContainer = styled.div`
   display: flex;
-  align-items: center;
-  height: calc(100vh - 256px);
   width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-image: url(${backgroundImage["src"]});
+  background-size: cover;
 `;

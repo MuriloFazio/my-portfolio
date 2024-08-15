@@ -7,6 +7,7 @@ export const NavbarContainer = styled.div`
   min-height: 125px;
   display: flex;
   justify-content: center;
+  background-color: white;
 `;
 
 export const ItemsWrapper = styled.div`

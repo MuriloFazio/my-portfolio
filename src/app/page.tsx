@@ -1,12 +1,12 @@
 "use client";
 
 import { HeroArea } from "./components/HeroArea";
-import { HomepageContainer } from "./styles";
+import { PageContainer } from "./styles";
 
 export default function HomePage() {
   return (
-    <HomepageContainer>
+    <PageContainer>
       <HeroArea />
-    </HomepageContainer>
+    </PageContainer>
   );
 }

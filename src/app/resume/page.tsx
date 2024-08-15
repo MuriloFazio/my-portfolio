@@ -2,10 +2,10 @@
 
 import { PageContainer } from "../styles";
 
-export default function Contact() {
+export default function Resume() {
   return (
     <PageContainer>
-      <div>Contact Page</div>
+      <div>Resume</div>
       <div>Content</div>
     </PageContainer>
   );

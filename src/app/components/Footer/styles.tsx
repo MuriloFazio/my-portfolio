@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  // position: fixed;
+  // bottom: 0;
   background-color: white;
 `;
 

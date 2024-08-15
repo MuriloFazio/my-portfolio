@@ -3,7 +3,6 @@
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../theme";
 import GlobalStyle from "../../GlobalStyle";
-import { StyledContainer } from "../../styles";
 
 import { Navbar } from "../Navbar";
 import { Footer } from "../Footer";
@@ -14,9 +13,11 @@ export function SharedLayout({ children }: { children: React.ReactNode }) {
       <body>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
-          <Navbar />
-          {children}
-          <Footer />
+          <main style={{ height: "100vh" }}>
+            <Navbar />
+            {children}
+            <Footer />
+          </main>
         </ThemeProvider>
       </body>
     </html>

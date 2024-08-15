@@ -12,3 +12,18 @@ export const theme = {
     secondary: "#333333",
   },
 };
+
+// text colors:
+// primary: #15161A;
+// secondary: #4A4C52;
+// weak: #ABAEB8;
+// white: #FFFFFF;
+//
+// background colors:
+// primary: #fff;
+// secondary: #27282e;
+// button: "#0070f3";
+//
+// border colors:
+// primary: #CBCED6;
+//

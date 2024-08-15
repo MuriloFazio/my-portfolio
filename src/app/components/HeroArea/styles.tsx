@@ -5,11 +5,15 @@ import Image from "next/image";
 export const HeroAreaContainer = styled.div`
   display: flex;
   width: 100%;
+  max-height: 800px;
+  align-self: center;
   justify-content: space-around;
   flex-direction: column-reverse;
+  align-items: center;
   gap: 40px;
   @media (min-width: 768px) {
     flex-direction: row;
+    gap: 8px;
   }
 
   //background-color: ${(props) => props.theme.backgroundColor.primary};
@@ -70,8 +74,8 @@ export const StyledProfission = styled.div`
   color: ${(props) => props.theme.colors.secondary};
 
   font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 42px;
 
   @media (min-width: 1200px) {
     font-weight: 700;
@@ -84,19 +88,24 @@ export const StyledCountry = styled.div`
   color: ${(props) => props.theme.colors.primary};
 
   font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 42px;
 
   @media (min-width: 1200px) {
     font-weight: 700;
-    font-size: 42px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 40px;
   }
 `;
 
 export const GreetingWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 16px;
+  width: fit-content;
 
   align-items: center;
   gap: 8px;

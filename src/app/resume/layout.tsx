@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "About page",
+  title: "Resume",
+  description: "Resume page",
 };
 
 export default function AboutLayout({
