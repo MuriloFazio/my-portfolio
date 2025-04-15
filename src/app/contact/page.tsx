@@ -5,8 +5,7 @@ import { PageContainer } from "../styles";
 export default function Contact() {
   return (
     <PageContainer>
-      <div>Contact Page</div>
-      <div>Content</div>
+      <>** Criar um formulario</>
     </PageContainer>
   );
 }
