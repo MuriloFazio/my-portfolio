@@ -3,33 +3,38 @@ import React from "react";
 import {
   HeroAreaContainer,
   GreetingWrapper,
-  ImageWrapper,
-  StyledCountry,
   Greeting,
-  StyledName,
-  StyledProfission,
+  StyledDescription,
   StyledButton,
   StyledImage,
+  ButtonsWrapper,
+  GithubWrapper,
 } from "./styles";
 
-import profilePicture from "../../assets/profilePicture.jpg";
+import profilePicture from "../../assets/profilePic2.jpg";
 import Link from "next/link";
+
+import { FaGithub } from "react-icons/fa";
+import { userData } from "@/app/utils/userData";
 
 export const HeroArea: React.FC = () => {
   return (
     <HeroAreaContainer>
       <GreetingWrapper>
-        <Greeting>Hi,</Greeting>
-        <StyledName>I'm Murilo Fazio</StyledName>
-        <StyledProfission>Front End Developer</StyledProfission>
-        <StyledCountry>From Brazil</StyledCountry>
-        <Link href="/contact">
-          <StyledButton type="button">Hire me</StyledButton>
-        </Link>
-      </GreetingWrapper>
-      <ImageWrapper>
         <StyledImage alt="my profile picture" src={profilePicture} />
-      </ImageWrapper>
+        <Greeting>Olá, meu nome é {userData.nameUser} 👋</Greeting>
+      </GreetingWrapper>
+      <StyledDescription>Eu sou um programador front-end fascinado em criar desenvolver novas idéias</StyledDescription>
+      <ButtonsWrapper>
+        <Link href="/contact">
+          <StyledButton type="button">Ver projetos</StyledButton>
+        </Link>
+        <GithubWrapper>
+        <Link href={`https://github.com/${userData.githubUser}`} target="_blank">
+          <FaGithub fill="black"/>
+        </Link>
+        </GithubWrapper>
+      </ButtonsWrapper>
     </HeroAreaContainer>
   );
 };

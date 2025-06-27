@@ -6,21 +6,24 @@ import GlobalStyle from "../../GlobalStyle";
 
 import { Navbar } from "../Navbar";
 import { Footer } from "../Footer";
+import { PageContainer } from "./styles";
 
 export function SharedLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
-        <ThemeProvider theme={theme}>
-          <GlobalStyle />
-          <main style={{ height: "100vh" }}>
+    <ThemeProvider theme={theme}>
+      <html lang="en">
+        <GlobalStyle />
+        <body>
+          <main>
+            <PageContainer>
             <Navbar />
-            {children}
+              {children}
             <Footer />
+            </PageContainer>
           </main>
-        </ThemeProvider>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ThemeProvider>
   );
 }
 

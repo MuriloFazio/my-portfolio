@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const ResumeContainer = styled.div`
-font-family: Arial, sans-serif;
-margin: 40px;
-color: #111;
-line-height: 1.6;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  color: #111;
+  line-height: 1.6;
 }`;
 
 export const ContentWrapper = styled.div`

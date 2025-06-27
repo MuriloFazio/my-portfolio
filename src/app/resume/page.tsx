@@ -1,6 +1,5 @@
 "use client";
 
-import { PageContainer } from "../styles";
 import {
   ResumeContainer,
   ContentWrapper,
@@ -13,9 +12,10 @@ import {
   Strong,
 } from "./styles";
 
+
 export default function Resume() {
   return (
-    <PageContainer>
+    <>
       <ResumeContainer>
         <Header>Murilo Fazio de Souza e Silva</Header>
         <ContentWrapper>
@@ -199,6 +199,6 @@ export default function Resume() {
           </List>
         </ContentWrapper>
       </ResumeContainer>
-    </PageContainer>
+    </>
   );
 }

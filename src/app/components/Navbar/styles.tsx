@@ -4,7 +4,7 @@ import Link from "next/link";
 export const NavbarContainer = styled.div`
   width: 100%;
   border-bottom: 1px solid #bfbfbf;
-  min-height: 125px;
+  height: 80px;
   display: flex;
   justify-content: center;
   background-color: white;
