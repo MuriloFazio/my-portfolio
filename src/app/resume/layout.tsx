@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Resume",
+  title: "Currículo",
   description: "Resume page",
 };
 
-export default function AboutLayout({
+export default function ResumeLayout({
   children,
 }: {
   children: React.ReactNode;

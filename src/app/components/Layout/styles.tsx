@@ -5,5 +5,4 @@ export const PageContainer = styled.div`
   flex-direction: column;
   height: 100vh;
   background-color: ${(props) => props.theme.backgroundColor.secondary};
-  overflow-y: auto;
 `;
