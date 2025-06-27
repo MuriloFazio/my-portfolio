@@ -5,6 +5,7 @@ export const ResumeContainer = styled.div`
   margin: 40px;
   color: #111;
   line-height: 1.6;
+  margin-bottom: 129px;
 }`;
 
 export const ContentWrapper = styled.div`

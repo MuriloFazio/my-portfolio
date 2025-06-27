@@ -15,7 +15,6 @@ import {
 
 export default function Resume() {
   return (
-    <>
       <ResumeContainer>
         <Header>Murilo Fazio de Souza e Silva</Header>
         <ContentWrapper>
@@ -70,18 +69,6 @@ export default function Resume() {
             </Link>
           </Paragraph>
         </ContentWrapper>
-
-        <ContentWrapper>
-          <SubHeader>✨ Resumo Profissional</SubHeader>
-          <Paragraph>
-            Desenvolvedor Front-End com 32 anos de idade e uma paixão constante
-            por tecnologia e inovação. Especializado em React, Next.js, Styled
-            Components e Jotai, com experiência na criação de interfaces
-            modernas, responsivas e com ótima performance. Sempre em busca de
-            novos aprendizados e desafios.
-          </Paragraph>
-        </ContentWrapper>
-
         <ContentWrapper>
           <SubHeader>⚖️ Habilidades Técnicas</SubHeader>
           <List>
@@ -199,6 +186,5 @@ export default function Resume() {
           </List>
         </ContentWrapper>
       </ResumeContainer>
-    </>
   );
 }

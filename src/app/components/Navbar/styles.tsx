@@ -3,11 +3,16 @@ import Link from "next/link";
 
 export const NavbarContainer = styled.div`
   width: 100%;
-  border-bottom: 1px solid #bfbfbf;
   height: 80px;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: #15161A;
+`;
+
+export const NavbarBorder = styled.div`
+  background: linear-gradient(to right, red, purple);
+  height: 2px;
+  width: 100%;
 `;
 
 export const ItemsWrapper = styled.div`
@@ -25,8 +30,9 @@ export const ItemsWrapper = styled.div`
 
 export const PortfolioWrapper = styled.p`
   padding: 0 12px;
-  color: ${(props) => props.theme.colors.secondary};
-  font-size: 40px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
   display: none;
 
   @media (min-width: 560px) {
@@ -37,7 +43,7 @@ export const PortfolioWrapper = styled.p`
 export const LinkItem = styled(Link)`
   padding: 0 12px;
   text-decoration: none;
-  color: black;
+  color: #FFFFFF;
 
   font-weight: 600;
   font-size: 20px;
