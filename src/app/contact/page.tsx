@@ -1,9 +1,11 @@
 "use client";
 
+import { Contacts } from "../components/Contacts";
+
 export default function Contact() {
   return (
     <>
-      <>** Criar um formulario</>
+      <Contacts />
     </>
   );
 }
