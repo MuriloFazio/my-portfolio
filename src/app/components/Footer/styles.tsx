@@ -13,7 +13,6 @@ export const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
 `;
 
 export const LinkWrapper = styled(Link)`
@@ -31,3 +30,4 @@ export const StyledReminder = styled.p`
   color: white;
   justify-self: center;
 `;
+
