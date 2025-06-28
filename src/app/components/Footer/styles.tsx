@@ -3,41 +3,31 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   width: 100%;
+  height: 120px;
+  background-color: #15161A;
   position: fixed;
   bottom: 0;
-  background-color: white;
 `;
 
 export const FooterWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  border-top: 1px solid black;
+  justify-content: center;
   align-items: center;
-  @media (min-width: 460px) {
-    padding: 32px;
-  }
-`;
-
-export const ItemsWrapper = styled.div`
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
-  padding: 8px 0;
-  @media (min-width: 560px) {
-    flex-direction: row;
-    gap: 24px;
-  }
-`;
-
-export const IconsWrapper = styled.div`
-  display: flex;
   gap: 12px;
 `;
-
-export const LogoWrapper = styled.div``;
 
 export const LinkWrapper = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: black;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+`;
+
+export const StyledReminder = styled.p`
+  color: white;
+  justify-self: center;
 `;
