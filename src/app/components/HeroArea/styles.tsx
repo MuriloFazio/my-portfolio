@@ -39,12 +39,12 @@ export const StyledDescription = styled.p`
 export const StyledButton = styled.button`
   border: none;
   border-radius: 8px;
-  color: #15161A;
-  background-color: ${(props) => props.theme.colors.secondary};
+  color: white;
+  background: linear-gradient(to right, red, purple);
   height: 48px;
   width: 160px;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
 `;
 
