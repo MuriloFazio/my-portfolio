@@ -12,7 +12,6 @@ import {
   Strong,
 } from "./styles";
 
-
 export default function Resume() {
   return (
       <ResumeContainer>
@@ -25,31 +24,6 @@ export default function Resume() {
           </Paragraph>
           <Paragraph>
             📍 Ribeirão Preto - SP | 💻 Disponível para trabalho remoto
-          </Paragraph>
-          <Paragraph>
-            📧{" "}
-            <Link href="mailto:faziomurilo@gmail.com">
-              faziomurilo@gmail.com
-            </Link>{" "}
-            | 📱 (16) 99210-9683
-          </Paragraph>
-          <Paragraph>
-            🌐{" "}
-            <Link href="https://linkedin.com/in/murilofazio">
-              linkedin.com/in/murilofazio
-            </Link>{" "}
-            |{" "}
-            <Link href="https://github.com/MuriloFazio">
-              github.com/MuriloFazio
-            </Link>
-          </Paragraph>
-        </ContentWrapper>
-
-        <ContentWrapper>
-          <SubHeader>✨ Resumo Profissional</SubHeader>
-          <Paragraph>
-            Desenvolvedor Front-End com 32 anos de idade e uma paixão constante
-            por tecnologia
           </Paragraph>
           <Paragraph>
             📧{" "}
@@ -179,7 +153,7 @@ export default function Resume() {
           <SubHeader>📚 Projetos em Destaque</SubHeader>
           <List>
             <ListItem>
-              <Link href="https://github.com/seurepo/nova">Chatbot Zeta</Link>:
+              <Link href="https://github.com/MuriloFazio/zeta">Chatbot Zeta</Link>:
               Assistente pessoal com contexto persistente, usando OpenAi e
               MongoDB
             </ListItem>

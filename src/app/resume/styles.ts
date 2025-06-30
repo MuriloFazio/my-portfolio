@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ResumeContainer = styled.div`
   font-family: Arial, sans-serif;
   margin: 40px;
-  color: #111;
+  color: lightgray;
   line-height: 1.6;
   margin-bottom: 129px;
 }`;
@@ -13,13 +13,13 @@ export const ContentWrapper = styled.div`
 `;
 
 export const Header = styled.h1`
-  color: #008f5f;
+  color: white;
   margin-bottom: 5px;
   font-size: 26px;
 `;
 
 export const SubHeader = styled.h2`
-  color: #008f5f;
+  color: white;
   margin-bottom: 5px;
   font-size: 20px;
   margin-top: 24px;
@@ -38,7 +38,7 @@ export const ListItem = styled.li`
 `;
 
 export const Link = styled.a`
-  color: #008f5f;
+  color: lightblue;
   text-decoration: none;
 `;
 
