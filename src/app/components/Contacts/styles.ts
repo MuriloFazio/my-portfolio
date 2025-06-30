@@ -5,6 +5,11 @@ import Link from "next/link";
 export const Container = styled.div`
   display: flex;
   padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const ContactMediasWrapper = styled.div`
@@ -45,32 +50,15 @@ export const ContactButton = styled(Link)`
   text-decoration: none;
 `;
  
-export const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  gap: 10px;
-  padding: 20px;
-  align-items: center;
-`;
-
-export const SideText = styled.p`
-  color: white;
-  font-size: 16px;
-  margin: 0;
-`;
- export const SideTitle = styled.h2`
-  color: white;
-  font-size: 24px;
-  margin: 0;
-  margin-bottom: 10px;
-`;
-
 export const IconWrapper = styled.div`
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+
+   @media (min-width: 768px) {
+    display: flex;
+  }
 `;
