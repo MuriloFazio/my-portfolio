@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const ProjectsPageContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const Header = styled.h2`
