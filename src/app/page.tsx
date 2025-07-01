@@ -4,11 +4,49 @@ import { HeroArea } from "./components/HeroArea";
 import { StackList } from "./components/StackList";
 import { stackOptions } from "./components/StackList/stackOptions";
 
+import {
+  Header, 
+  SubHeader, 
+  ProjectsPageContainer, 
+  TextWrapper,
+  SideText,
+  SideTitle,
+  ContactsPageContainer, 
+  HomePageSection
+} from "./styles";
+
+import { GithubRepos } from "@/app/components/GithubRepos/GithubRepos";
+
+import { PiCoffeeFill } from "react-icons/pi";
+
+import { Contacts } from "./components/Contacts";
+
 export default function HomePage() {
   return (
     <>
-      <HeroArea />
-      <StackList stackData={stackOptions}></StackList>
+      <HomePageSection id={'main'}>
+        <HeroArea />
+        <StackList stackData={stackOptions}></StackList>
+      </HomePageSection>
+
+      <HomePageSection id={'projects'} style={{ backgroundColor: "#15161A"}}>
+        <ProjectsPageContainer>
+          <Header>Meus projetos</Header>
+          <SubHeader>A lista de repositórios do meu Github.</SubHeader>
+          <GithubRepos />
+        </ProjectsPageContainer>
+      </HomePageSection>
+
+      <HomePageSection>
+        <ContactsPageContainer id={'contact'}>
+          <TextWrapper>
+            <SideTitle>Vamos marcar uma conversa e desenvolver um projeto juntos?</SideTitle>
+            <SideText>Se tiver alguma pergunta, fique à vontade para entrar em contato!</SideText>
+            <PiCoffeeFill fill="white" size={300} />
+          </TextWrapper>
+          <Contacts />
+        </ContactsPageContainer>
+      </HomePageSection>
     </>
   );
 }

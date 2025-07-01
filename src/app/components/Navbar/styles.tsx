@@ -7,12 +7,16 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: center;
   background-color: #15161A;
+  position: fixed;
+  top: 0;
 `;
 
 export const NavbarBorder = styled.div`
   background: linear-gradient(to right, red, purple);
   height: 2px;
   width: 100%;
+  position: fixed;
+  top: 80px;
 `;
 
 export const ItemsWrapper = styled.div`
