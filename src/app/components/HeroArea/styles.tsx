@@ -4,7 +4,7 @@ import Image from "next/image";
 export const HeroAreaContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
   max-width: 480px;
 `;
 

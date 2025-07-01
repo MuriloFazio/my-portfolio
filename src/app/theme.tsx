@@ -11,6 +11,11 @@ export const theme = {
     primary: "#F5F5F5",
     secondary: "#333333",
   },
+    breakpoint: {
+    mobile: '768px',
+    desktop: '1024px',
+    wide: '1440px',
+  },
 };
 
 // text colors:
@@ -27,3 +32,10 @@ export const theme = {
 // border colors:
 // primary: #CBCED6;
 //
+
+
+// const breakpoint = {
+//   mobile: '768px',
+//   desktop: '1024px',
+//   wide: '1440px',
+// };

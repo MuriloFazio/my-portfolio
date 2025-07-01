@@ -26,7 +26,7 @@ export const ItemsWrapper = styled.div`
 
   justify-content: center;
 
-  @media (min-width: 560px) {
+  @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
     justify-content: space-between;
     padding: 0 20px;
   }
@@ -39,7 +39,7 @@ export const PortfolioWrapper = styled.p`
   font-weight: 600;
   display: none;
 
-  @media (min-width: 560px) {
+  @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
     display: flex;
   }
 `;
@@ -53,7 +53,7 @@ export const LinkItem = styled(Link)`
   font-size: 20px;
   line-height: 24px;
 
-  @media (min-width: 560px) {
+  @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
