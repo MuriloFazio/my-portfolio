@@ -22,20 +22,20 @@ const Contact: React.FC<ContactProps> = ({
   link,
 }) => {
   return (
-   <ContactMedia>
-          <IconWrapper style={{ backgroundColor: backgroundColor }}>
-            {icon}
-          </IconWrapper>
-          <MediaWrapper>
-            <ContactMediaTitle>{title}</ContactMediaTitle>
-            <ContactText>{text}</ContactText>
-            <ContactButton
-              target="_blank"
-              href={link}>
-              Enviar mensagem
-            </ContactButton>
-          </MediaWrapper>
-        </ContactMedia>
+    <ContactMedia>
+      <IconWrapper style={{ backgroundColor: backgroundColor }}>
+        {icon}
+      </IconWrapper>
+      <MediaWrapper>
+        <ContactMediaTitle>{title}</ContactMediaTitle>
+        <ContactText>{text}</ContactText>
+        <ContactButton
+          target="_blank"
+          href={link}>
+          Enviar mensagem
+        </ContactButton>
+      </MediaWrapper>
+    </ContactMedia>
   )
 };
 

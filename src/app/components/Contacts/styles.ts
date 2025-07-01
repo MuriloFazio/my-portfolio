@@ -6,10 +6,6 @@ export const Container = styled.div`
   display: flex;
   padding: 20px;
   justify-content: center;
-  flex-direction: column;
-  @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
-    flex-direction: row;
-  }
 `;
 
 export const ContactMediasWrapper = styled.div`
@@ -23,6 +19,11 @@ export const ContactMedia = styled.div`
   display: flex;
   margin-bottom: 10px;
   gap: 20px;
+  flex-direction: column;
+  @media(min-width: ${(props) => props.theme.breakpoint.mobile}){
+    flex-direction: row;
+  }
+
 `;
 
 export const MediaWrapper = styled.div`
@@ -39,7 +40,7 @@ export const ContactMediaTitle = styled.p`
 
 export const ContactText = styled.p`
   margin: 0;
-  color: white;
+  color: lightgray;
   font-size: 16px;
 `;
 
@@ -48,17 +49,17 @@ export const ContactButton = styled(Link)`
   cursor: pointer;
   width: fit-content;
   text-decoration: none;
+
+  &:hover {
+    color: white;
+  }
 `;
  
 export const IconWrapper = styled.div`
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-
-   @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
-    display: flex;
-  }
+  width: 54px;
+  height: 54px;
+  border-radius: 25%;
 `;
