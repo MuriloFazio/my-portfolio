@@ -5,8 +5,6 @@ export const FooterContainer = styled.div`
   width: 100%;
   height: 120px;
   background-color: #15161A;
-  position: fixed;
-  bottom: 0;
 `;
 
 export const FooterWrapper = styled.div`

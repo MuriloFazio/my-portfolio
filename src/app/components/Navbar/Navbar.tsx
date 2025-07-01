@@ -16,9 +16,9 @@ export const Navbar: React.FC = () => {
           <PortfolioWrapper>Murilo Fazio</PortfolioWrapper>
           <LinksWrapper>
             <LinkItem href={"/"}>Home</LinkItem>
-            <LinkItem href={"/projects"}>Projetos</LinkItem>
+            <LinkItem href={"#projects"}>Projetos</LinkItem>
+            <LinkItem href={"#contact"}>Contato</LinkItem>
             <LinkItem href={"/resume"}>Currículo</LinkItem>
-            <LinkItem href={"/contact"}>Contato</LinkItem>
           </LinksWrapper>
         </ItemsWrapper>
       </NavbarContainer>
