@@ -7,21 +7,20 @@ import { stackOptions } from "./components/StackList/stackOptions";
 import {
   Header, 
   SubHeader, 
-  ProjectsPageContainer, 
+  ProjectsContainer, 
   TextWrapper,
-  SideText,
-  SideTitle,
-  ContactsPageContainer, 
+  ContactText,
+  ContactTitle,
+  ContactsContainer, 
   HomePageSection,
   HomePageWrapper,
   ProjectsSection,
   StyledSection,
+  CoffeeImageWrapper,
 } from "./styles";
 
 import { GithubRepos } from "@/app/components/GithubRepos/GithubRepos";
-
-import { PiCoffeeFill } from "react-icons/pi";
-
+import {ReactComponent} from "./assets/svg/CoffeeCupComponent"
 import { Contacts } from "./components/Contacts";
 
 export default function HomePage() {
@@ -35,22 +34,24 @@ export default function HomePage() {
       </HomePageSection>
 
       <ProjectsSection id={'projects'}>
-        <ProjectsPageContainer>
+        <ProjectsContainer>
           <Header>Meus projetos</Header>
           <SubHeader>A lista de repositórios do meu Github.</SubHeader>
           <GithubRepos />
-        </ProjectsPageContainer>
+        </ProjectsContainer>
       </ProjectsSection>
 
       <StyledSection>
-        <ContactsPageContainer id={'contact'}>
+        <ContactsContainer id={'contact'}>
           <TextWrapper>
-            <SideTitle>Vamos marcar uma conversa e desenvolver um projeto juntos?</SideTitle>
-            <SideText>Se tiver alguma pergunta, fique à vontade para entrar em contato!</SideText>
-            <PiCoffeeFill fill="white" size={300} />
+            <ContactTitle>Vamos marcar uma conversa e desenvolver um projeto juntos?</ContactTitle>
+            <ContactText>Se tiver alguma pergunta, fique à vontade para entrar em contato!</ContactText>
+            <CoffeeImageWrapper>
+              <ReactComponent style={{fill: 'white'}}/>
+            </CoffeeImageWrapper>
           </TextWrapper>
           <Contacts />
-        </ContactsPageContainer>
+        </ContactsContainer>
       </StyledSection>
     </>
   );
