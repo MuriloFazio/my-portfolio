@@ -7,9 +7,16 @@ export const StackContainer = styled.div`
 export const StackCards = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
     justify-items: center;
-    padding: 3rem 0px;
+    gap: 4rem;
+    padding: 2rem 0px;
+
+    @media (min-width: 768px) {
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 6rem;
+			padding: 3rem 0px;
+    }
+
 `;
 
 export const StackItem = styled.div`

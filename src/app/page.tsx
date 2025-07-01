@@ -12,7 +12,10 @@ import {
   SideText,
   SideTitle,
   ContactsPageContainer, 
-  HomePageSection
+  HomePageSection,
+  HomePageWrapper,
+  ProjectsSection,
+  StyledSection,
 } from "./styles";
 
 import { GithubRepos } from "@/app/components/GithubRepos/GithubRepos";
@@ -25,19 +28,21 @@ export default function HomePage() {
   return (
     <>
       <HomePageSection id={'main'}>
-        <HeroArea />
-        <StackList stackData={stackOptions}></StackList>
+        <HomePageWrapper>
+          <HeroArea />
+          <StackList stackData={stackOptions}></StackList>
+        </HomePageWrapper>
       </HomePageSection>
 
-      <HomePageSection id={'projects'} style={{ backgroundColor: "#15161A"}}>
+      <ProjectsSection id={'projects'}>
         <ProjectsPageContainer>
           <Header>Meus projetos</Header>
           <SubHeader>A lista de repositórios do meu Github.</SubHeader>
           <GithubRepos />
         </ProjectsPageContainer>
-      </HomePageSection>
+      </ProjectsSection>
 
-      <HomePageSection>
+      <StyledSection>
         <ContactsPageContainer id={'contact'}>
           <TextWrapper>
             <SideTitle>Vamos marcar uma conversa e desenvolver um projeto juntos?</SideTitle>
@@ -46,7 +51,7 @@ export default function HomePage() {
           </TextWrapper>
           <Contacts />
         </ContactsPageContainer>
-      </HomePageSection>
+      </StyledSection>
     </>
   );
 }

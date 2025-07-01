@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: 20px;
   justify-content: center;
   flex-direction: column;
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
     flex-direction: row;
   }
 `;
@@ -58,7 +58,7 @@ export const IconWrapper = styled.div`
   height: 50px;
   border-radius: 50%;
 
-   @media (min-width: 768px) {
+   @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
     display: flex;
   }
 `;
