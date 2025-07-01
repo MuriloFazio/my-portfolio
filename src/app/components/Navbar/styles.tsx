@@ -6,7 +6,7 @@ export const NavbarContainer = styled.div`
   height: 80px;
   display: flex;
   justify-content: center;
-  background-color: #15161A;
+  background-color: black;
   position: fixed;
   top: 0;
 `;
@@ -24,12 +24,9 @@ export const ItemsWrapper = styled.div`
   flex-grow: 1;
   align-items: center;
 
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 20px;
 
-  @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
-    justify-content: space-between;
-    padding: 0 20px;
-  }
 `;
 
 export const PortfolioWrapper = styled.p`
@@ -37,7 +34,7 @@ export const PortfolioWrapper = styled.p`
   color: #FFFFFF;
   font-size: 20px;
   font-weight: 600;
-  display: none;
+  display: flex;
 
   @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
     display: flex;
@@ -48,16 +45,43 @@ export const LinkItem = styled(Link)`
   padding: 0 12px;
   text-decoration: none;
   color: #FFFFFF;
-
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
+`;
 
+export const LinksWrapper = styled.div`
+  display: none;
   @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    display: flex;
   }
 `;
 
-export const LinksWrapper = styled.div``;
+export const LinksButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  background-color: #333333; 
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
+    display: none;
+  }
+`;
+
+export const ButtonLinksWrapper = styled.div`
+display: flex;
+flex-direction: column;
+position: absolute;
+top: 80px;
+left: 0;
+gap: 16px;
+background-color: black;
+padding: 20px;
+width: 100%;
+  @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
+    display: none;
+  }
+`;

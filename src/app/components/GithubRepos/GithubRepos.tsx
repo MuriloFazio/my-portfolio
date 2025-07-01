@@ -34,7 +34,7 @@ export const GithubRepos: React.FC = () => {
 
     return (
         <Container>
-            <>{repositories && repositories.map((repo)=>{
+            {repositories && repositories.map((repo)=>{
                 return (
                     <RepoCard key={repo.id}>
                         <RepoTitle>{repo.name}</RepoTitle>
@@ -51,7 +51,7 @@ export const GithubRepos: React.FC = () => {
                         </LinkWrapper>
                     </RepoCard>
                 );
-            })}</>
+            })}
         </Container>
     );
 }
