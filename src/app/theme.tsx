@@ -1,4 +1,25 @@
-export const theme = {
+
+export type Theme = {
+  colors: {
+    primary: string;
+    secondary: string;
+  },
+  fonts: {
+    primary: string;
+    secondary: string;
+  },
+  backgroundColor: {
+    primary: string;
+    secondary: string;
+  },
+  breakpoint: {
+    mobile: string,
+    desktop: string,
+    wide: string,
+  },
+}
+
+export const theme: Theme = {
   colors: {
     primary: "#1f2937",
     secondary: "#FFFFFF",
@@ -11,7 +32,7 @@ export const theme = {
     primary: "#F5F5F5",
     secondary: "#333333",
   },
-    breakpoint: {
+  breakpoint: {
     mobile: '768px',
     desktop: '1024px',
     wide: '1440px',
