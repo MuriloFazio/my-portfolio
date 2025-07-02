@@ -72,16 +72,16 @@ export const LinksButton = styled.div`
 `;
 
 export const ButtonLinksWrapper = styled.div`
-display: flex;
-flex-direction: column;
-position: absolute;
-top: 80px;
-left: 0;
-gap: 16px;
-background-color: black;
-padding: 20px;
-width: 100%;
-  @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
-    display: none;
-  }
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  gap: 16px;
+  background-color: black;
+  padding: 20px;
+  width: 100%;
+    @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
+      display: none;
+    }
 `;
