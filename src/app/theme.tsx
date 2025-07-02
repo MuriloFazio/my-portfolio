@@ -1,16 +1,16 @@
 
 export type Theme = {
   colors: {
-    primary: string;
-    secondary: string;
+    primary: string,
+    secondary: string,
   },
   fonts: {
-    primary: string;
-    secondary: string;
+    primary: string,
+    secondary: string,
   },
   backgroundColor: {
-    primary: string;
-    secondary: string;
+    primary: string,
+    secondary: string,
   },
   breakpoint: {
     mobile: string,
@@ -53,10 +53,3 @@ export const theme: Theme = {
 // border colors:
 // primary: #CBCED6;
 //
-
-
-// const breakpoint = {
-//   mobile: '768px',
-//   desktop: '1024px',
-//   wide: '1440px',
-// };
