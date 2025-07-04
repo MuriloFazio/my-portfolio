@@ -26,7 +26,7 @@ export const HeroArea: React.FC = () => {
       </GreetingWrapper>
       <StyledDescription>Eu sou um programador front-end fascinado em criar desenvolver novas idéias</StyledDescription>
       <ButtonsWrapper>
-        <Link href="/projects">
+        <Link href="/#projects">
           <StyledButton type="button">Ver projetos</StyledButton>
         </Link>
         <GithubWrapper>
