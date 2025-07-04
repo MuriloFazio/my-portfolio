@@ -5,13 +5,13 @@ import { StackList } from "./components/StackList";
 import { stackOptions } from "./components/StackList/stackOptions";
 
 import {
-  Header, 
-  SubHeader, 
-  ProjectsContainer, 
+  Header,
+  SubHeader,
+  ProjectsContainer,
   TextWrapper,
   ContactText,
   ContactTitle,
-  ContactsContainer, 
+  ContactsContainer,
   HomePageSection,
   HomePageWrapper,
   ProjectsSection,
@@ -20,7 +20,7 @@ import {
 } from "./styles";
 
 import { GithubRepos } from "@/app/components/GithubRepos/GithubRepos";
-import {ReactComponent} from "./assets/svg/CoffeeCupComponent"
+import { ReactComponent } from "./assets/svg/CoffeeCupComponent";
 import { Contacts } from "./components/Contacts";
 
 export default function HomePage() {
@@ -35,8 +35,11 @@ export default function HomePage() {
 
       <ProjectsSection id={'projects'}>
         <ProjectsContainer>
-          <Header>Meus projetos</Header>
-          <SubHeader>A lista de repositórios do meu Github.</SubHeader>
+          <Header>Projetos em Destaque</Header>
+          <SubHeader>
+            Soluções que desenvolvi para resolver problemas reais.
+            Cada projeto conta uma história de criatividade e técnica.
+          </SubHeader>
           <GithubRepos />
         </ProjectsContainer>
       </ProjectsSection>
@@ -47,7 +50,7 @@ export default function HomePage() {
             <ContactTitle>Vamos marcar uma conversa e desenvolver um projeto juntos?</ContactTitle>
             <ContactText>Se tiver alguma pergunta, fique à vontade para entrar em contato!</ContactText>
             <CoffeeImageWrapper>
-              <ReactComponent style={{fill: 'white'}}/>
+              <ReactComponent style={{ fill: 'white' }} />
             </CoffeeImageWrapper>
           </TextWrapper>
           <Contacts />

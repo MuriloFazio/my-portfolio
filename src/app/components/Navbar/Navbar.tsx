@@ -11,7 +11,7 @@ import {
 } from "./styles";
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import { useIsMobile } from "@/app/hooks/useIsMobile"; // ajuste o path se necessário
+import { useIsMobile } from "@/app/hooks/useIsMobile";
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

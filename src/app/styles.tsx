@@ -9,22 +9,26 @@ export const StyledSection = styled.section`
   align-items: center;
   justify-content: center;
   padding: 20px;
-  height: 78vh;
   padding-top: 90px;
   border-top: 1px solid white;
+
+  @media (min-width: ${(props) => props.theme.breakpoint.mobile}) {
+    height: 78vh;
+  }
 `;
 
 export const HomePageSection = styled(StyledSection)`
-@media (min-width: ${(props) => props.theme.breakpoint.desktop}) {
+  padding-top: 180px;
+  @media (min-width: ${(props) => props.theme.breakpoint.desktop}) {
     background-image: url(${src});
     background-position: right -30% center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }  
 
-@media (min-width: ${(props) => props.theme.breakpoint.wide}) {
-  background-position: right;
-}
+  @media (min-width: ${(props) => props.theme.breakpoint.wide}) {
+    background-position: right;
+  }
 `;
 
 export const ProjectsSection = styled(StyledSection)`
